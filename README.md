@@ -9,7 +9,7 @@ Sanitize-SQL-NPM-Package is a lightweight and easy-to-use Node.js module designe
 ## Installation
 
 ```bash
-npm install sanitize-sql-npm-package
+npm install sanitize-sql
 ```
 
 ## Usage
