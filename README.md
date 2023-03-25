@@ -14,7 +14,7 @@ npm install sanitize-sql-npm-package
 
 ## Usage
 ```javascript
-const { SQL } = require('sanitize-sql-npm-package');
+const { SQL } = require('sanitize-sql');
 
 const sql = new SQL();
 const unsanitizedQuery = "SELECT * FROM users WHERE name = 'John' OR '1'='1';";
