@@ -1,4 +1,4 @@
-# Sanitize-SQL-NPM-Package
+# Sanitize SQL NPM-Package
 
 <a href="https://www.npmjs.com/package/sanitize-sql">![npm](https://img.shields.io/npm/v/sanitize-sql)</a>
 <a href="https://github.com/aaronmansfield5/Sanitize-SQL-NPM-Package/issues">![GitHub issues](https://img.shields.io/github/issues/aaronmansfield5/sanitize-sql-npm-package)</a>
