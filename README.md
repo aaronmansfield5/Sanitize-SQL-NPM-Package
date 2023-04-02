@@ -1,4 +1,4 @@
-# <a href="https://www.npmjs.com/package/sanitize-sql" target="_blank">Sanitize SQL NPM-Package</a>
+# <a href="https://www.npmjs.com/package/sanitize-sql">Sanitize SQL NPM-Package</a>
 
 ![npm](https://img.shields.io/npm/v/sanitize-sql)
 ![npm](https://img.shields.io/npm/dt/sanitize-sql)
