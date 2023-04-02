@@ -1,44 +1,64 @@
-# <a href="https://www.npmjs.com/package/sanitize-sql">Sanitize SQL NPM-Package</a>
+# <a href="https://www.npmjs.com/package/sanitize-sql">Sanitize-SQL</a>
 
-![npm](https://img.shields.io/npm/v/sanitize-sql)
-![npm](https://img.shields.io/npm/dt/sanitize-sql)
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/aaronmansfield5/sanitize-sql-npm-package)
-![GitHub issues](https://img.shields.io/github/issues/aaronmansfield5/sanitize-sql-npm-package)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/aaronmansfield5/sanitize-sql-npm-package)
-![GitHub stars](https://img.shields.io/github/stars/aaronmansfield5/sanitize-sql-npm-package)
+A simple SQL sanitizer library to help prevent SQL injection attacks. Sanitize-SQL is designed to be used in conjunction with other security measures, such as prepared statements.
 
-Sanitize SQL NPM-Package is a lightweight and easy-to-use Node.js module designed to help protect your database from SQL injection attacks by sanitizing SQL query values. It provides a simple API to escape single quotes and remove potentially dangerous keywords from SQL queries. While not a comprehensive security solution, Sanitize-SQL-NPM-Package is an essential tool to complement other security measures, such as using prepared statements, for a more robust database defense.
+[![npm version](https://img.shields.io/npm/v/sanitize-sql.svg)](https://www.npmjs.com/package/sanitize-sql)
+[![npm downloads](https://img.shields.io/npm/dt/sanitize-sql.svg)](https://www.npmjs.com/package/sanitize-sql)
+[![GitHub release](https://img.shields.io/github/release/aaronmansfield5/Sanitize-SQL-NPM-Package.svg)](https://github.com/aaronmansfield5/Sanitize-SQL-NPM-Package/releases)
+[![GitHub issues](https://img.shields.io/github/issues/aaronmansfield5/Sanitize-SQL-NPM-Package.svg)](https://github.com/aaronmansfield5/Sanitize-SQL-NPM-Package/issues)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/aaronmansfield5/Sanitize-SQL-NPM-Package.svg)](https://github.com/aaronmansfield5/Sanitize-SQL-NPM-Package/pulls)
+[![GitHub stars](https://img.shields.io/github/stars/aaronmansfield5/Sanitize-SQL-NPM-Package.svg)](https://github.com/aaronmansfield5/Sanitize-SQL-NPM-Package/stargazers)
 
 ## Installation
 
-```bash
+Using npm:
+
+```sh
 npm install sanitize-sql
 ```
-
 ## Usage
-```javascript
-const { SQL } = require('sanitize-sql');
+```js
+const { SQL } = require("sanitize-sql");
 
 const sql = new SQL();
-const unsanitizedQuery = "SELECT * FROM users WHERE name = 'John' OR '1'='1';";
-const sanitizedQuery = sql.sanitize(unsanitizedQuery);
+
+const unsafeQuery = "SELECT * FROM users WHERE username='admin' AND password='password';";
+const sanitizedQuery = sql.sanitize(unsafeQuery);
 
 console.log(sanitizedQuery);
 ```
-
 ## API
-### sanitize(query: string): string
-Sanitizes the given SQL query by escaping single quotes and removing potentially dangerous keywords.
+`sanitize(query)`
+Sanitize the values within an SQL query to prevent SQL injection.
 
-### addRestrictedKeyword(keyword: string): void
-Adds a new restricted keyword to the list of keywords that should be removed from queries.
+- `query` (string) - The SQL query to sanitize.
+Returns the sanitized SQL query as a string.
 
-### removeRestrictedKeyword(keyword: string): void
-Removes a restricted keyword from the list of keywords that should be removed from queries.
+`addRestrictedKeyword(keyword)`
 
-### isValidKeyword(keyword: string): boolean
-Checks if the provided keyword is valid.
+Add a restricted keyword to the list of keywords that should be removed from queries.
+
+- `keyword` (string) - The restricted keyword to add.
+`removeRestrictedKeyword(keyword)`
+
+Remove a restricted keyword from the list of keywords that should be removed from queries.
+
+- `keyword` (string) - The restricted keyword to remove.
+`isValidKeyword(keyword)`
+
+Check if the provided keyword is valid.
+
+`keyword` (string) - The keyword to validate.
+
+Returns true if the keyword is valid, false otherwise.
 
 ## Contributing
-- Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-- Please make sure to update tests as appropriate.
+- Fork the repository on GitHub: https://github.com/aaronmansfield5/sanitize-sql
+- Clone your forked repository locally
+- Create a new branch for your changes
+- Make your changes and commit them
+- Push your changes to your forked repository on GitHub
+- Create a Pull Request targeting the main branch
+
+## Credits
+Created by <a href="https://github.com/aaronmansfield5"><b>aaronmansfield5.</b></a>
