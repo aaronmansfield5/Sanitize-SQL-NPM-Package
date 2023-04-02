@@ -2,8 +2,8 @@
 
 A simple SQL sanitizer library to help prevent SQL injection attacks. Sanitize-SQL is designed to be used in conjunction with other security measures, such as prepared statements.
 
-[![npm version](https://img.shields.io/npm/v/sanitize-sql.svg)](https://www.npmjs.com/package/sanitize-sql)
-[![npm downloads](https://img.shields.io/npm/dt/sanitize-sql.svg)](https://www.npmjs.com/package/sanitize-sql)
+[![npm version](https://img.shields.io/npm/v/sanitize-sql)](https://www.npmjs.com/package/sanitize-sql)
+[![npm downloads](https://img.shields.io/npm/dt/sanitize-sql)](https://www.npmjs.com/package/sanitize-sql)
 [![GitHub release](https://img.shields.io/github/release/aaronmansfield5/Sanitize-SQL-NPM-Package.svg)](https://github.com/aaronmansfield5/Sanitize-SQL-NPM-Package/releases)
 [![GitHub issues](https://img.shields.io/github/issues/aaronmansfield5/Sanitize-SQL-NPM-Package.svg)](https://github.com/aaronmansfield5/Sanitize-SQL-NPM-Package/issues)
 [![GitHub pull requests](https://img.shields.io/github/issues-pr/aaronmansfield5/Sanitize-SQL-NPM-Package.svg)](https://github.com/aaronmansfield5/Sanitize-SQL-NPM-Package/pulls)
