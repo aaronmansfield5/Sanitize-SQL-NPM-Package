@@ -7,7 +7,7 @@
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/aaronmansfield5/sanitize-sql-npm-package)
 ![GitHub stars](https://img.shields.io/github/stars/aaronmansfield5/sanitize-sql-npm-package)
 
-Sanitize-SQL-NPM-Package is a lightweight and easy-to-use Node.js module designed to help protect your database from SQL injection attacks by sanitizing SQL query values. It provides a simple API to escape single quotes and remove potentially dangerous keywords from SQL queries. While not a comprehensive security solution, Sanitize-SQL-NPM-Package is an essential tool to complement other security measures, such as using prepared statements, for a more robust database defense.
+Sanitize SQL NPM-Package is a lightweight and easy-to-use Node.js module designed to help protect your database from SQL injection attacks by sanitizing SQL query values. It provides a simple API to escape single quotes and remove potentially dangerous keywords from SQL queries. While not a comprehensive security solution, Sanitize-SQL-NPM-Package is an essential tool to complement other security measures, such as using prepared statements, for a more robust database defense.
 
 ## Installation
 
